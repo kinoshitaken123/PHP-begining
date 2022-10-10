@@ -1,0 +1,9 @@
+<body>
+  <?php
+  var_dump(1234);
+  var_dump((string)1234);
+  var_dump((int)1234);
+  var_dump((string)true);
+  var_dump((string)false);
+  ?>
+</body>
