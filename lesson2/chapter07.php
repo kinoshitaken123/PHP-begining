@@ -1,0 +1,12 @@
+<body>
+  <?php
+  var_dump(strval(1234));
+  var_dump(intval(1234.5));
+  var_dump(strval(true));
+  var_dump(strval(false));
+  var_dump(boolval(true));
+  var_dump(boolval(false));
+  var_dump(boolval(0));
+  var_dump(boolval(1));
+  ?>
+</body>
