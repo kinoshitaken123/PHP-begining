@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class showTaskName
+class Task
 {
   private $name;
   private $progress;
@@ -13,17 +13,20 @@ class showTaskName
   {
     return $this->name;
   }
+
   // nameプロパティのセッターメソッド
   public function setName(string $name): void
   {
     return $this->progress;
   }
+
   // progressプロパティのゲッターメソッド
   public function getProgress(): int
   {
     return $this->progress;
   }
-  public function serProgress(int $progress): void
+
+  public function setProgress(int $progress): void
   {
     if ($progress < 0) {
       $progress = 0;
@@ -38,7 +41,7 @@ class showTaskName
     $this->progress = 100;
   }
 
-  public function cleareProgress(): void
+  public function clearProgress(): void
   {
     $this->progress = 0;
   }
