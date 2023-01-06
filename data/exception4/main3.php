@@ -2,7 +2,7 @@
 $model = new UserModel();
 try{
   $profile =$model->findProfile(1001);
-}catch(Exception$$exception){
+}catch(Exception$exception){
   echo file_get_contents('error-unknown.html');
   return;
 }catch(PageNotFoundException$exception){
