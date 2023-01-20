@@ -25,5 +25,13 @@
     } else {
       echo '半角文字とハイフンのみで入力してください';
     }
+
+    echo '半角英数字のみを入力チェックする', PHP_EOL;
+    $input = 'Hello';
+    if (preg_match('/\A[a-zA-Z0-9+\z]/ui', $input)) {
+      echo '半角数字のみで入力してください', PHP_EOL;
+    } else {
+      echo '半角数字のみで入力してください', PHP_EOL;
+    }
   ?>
 </body>
