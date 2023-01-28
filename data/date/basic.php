@@ -39,5 +39,9 @@
           ->modify('Next Saturday')
           ->setTime(0, 0, 0)
           ->format('Y.m.d H:i:s'), PHP_EOL;
+      // 2019-02-25　17:1234のインスタンスを作った後、タイムゾーンをUTCに変更して出力する
+      $dataTime = new DateTime('2023-01-28 17:12:34');
+      $dataTime->setTimezone(new DateTimeZone('UTC'));
+      echo $dataTime->format('Y.m.d H:i:s'), PHP_EOL;
   ?>
 </body>
