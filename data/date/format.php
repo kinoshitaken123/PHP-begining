@@ -9,5 +9,10 @@
       echo $date->format('Y年m月d日(D) H時i分'), PHP_EOL;
       // その月の日数
       echo $date->format('Y.m.t'), PHP_EOL;
+      echo $date->format('U'), PHP_EOL; // UNIXタイム
+
+      // 協定世界時（UTC）にタイムゾーンを変更する
+      $date->setTimezone(new DateTimeZone('UTC'));
+      echo $date->format('Y.m.d H:i:s');
     ?>
   </body>
