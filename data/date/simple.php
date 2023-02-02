@@ -15,5 +15,8 @@
 
       echo '2019-01-10 10:00:00の3時間前を出力', PHP_EOL;
       echo date('Y-m-d H:i:s', strtotime('-3 hours', strtotime('2019-01-10 10:00:00'))), PHP_EOL;
+
+      $date1 = '2019-02-25 09:23:00';
+      $date2 = '2019-02-25 17:23:00';
   ?>
 </body>
