@@ -28,5 +28,13 @@ declare(strict_types=1); ?>
   echo '●prefectureキーの取得', PHP_EOL;
   $prefecture = array_column($userList, 'prefecture');
   print_r($prefecture);
+
+  echo '●prefectureキーの取得し、戻り値のキーはuser_idとする', PHP_EOL;
+  $prefecture = array_column($userList, 'prefecture', 'user_id');
+  print_r($prefecture);
+
+  echo '●全てのキーを取得し、戻り値のキーはuser_idとする', PHP_EOL;
+  $prefecture = array_column($userList, 'null', 'user_id');
+  print_r($prefecture);
   ?>
 </body>
