@@ -5,5 +5,6 @@
     var_dump(file_exists('files/note.txt')); 
     // false
     var_dump(file_exists('files/gost.txt')); 
+    var_dump(file_exists('files/dirl'));
   ?>
 </body>
